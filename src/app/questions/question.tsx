@@ -55,14 +55,14 @@ export default function Question({animeImage, answerImage, question, possibleAns
                     />
                 </div>
                 
-                <div className="flex flex-col flex-wrap justify-center w-[50vw] max-sm:w-[80vw] text-2xl max-sm:text-lg min-lg:text-4xl">
+                <div className="flex flex-col flex-wrap justify-center w-[50vw] max-sm:w-[80vw] text-2xl max-sm:text-lg min-2xl:text-4xl">
                     <h2>{question}</h2>
-                    <div className="flex flex-row flex-wrap justify-center text-lg max-sm:text-sm min-lg:text-2xl">
+                    <div className="flex flex-row flex-wrap justify-center text-lg max-sm:text-sm min-2xl:text-2xl">
                         {possibleAnswers.map((ans) => {
                             return <button 
                             key={ans.id}
                             onClick={()=> handleClick(ans.id)} 
-                            className="rounded-[8px] border-solid w-[300px] min-lg:w-[400px] border-[2px] m-[0.5rem] border-black px-[1.2em] py-[0.6em] font-medium bg-[#C1C3C1] cursor-pointer text-black hover:bg-[#1A97DB] hover:text-white">
+                            className="rounded-[8px] border-solid w-[300px] min-2xl:w-[400px] border-[2px] m-[0.5rem] border-black px-[1.2em] py-[0.6em] font-medium bg-[#C1C3C1] cursor-pointer text-black hover:bg-[#1A97DB] hover:text-white">
                                 {ans.text}
                             </button>
                         })}
