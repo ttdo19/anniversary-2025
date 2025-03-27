@@ -49,6 +49,7 @@ export default function Question({animeImage, answerImage, question, possibleAns
                 <div className="min-sm:w-[35vw] w-[70vw]">
                     <Image
                         src={animeImage}
+                        priority={true}
                         alt="Anime Image"
                         width={500}
                         className="rounded-lg border-2 border-black"
@@ -86,6 +87,7 @@ export default function Question({animeImage, answerImage, question, possibleAns
                     <div className="w-[50vw] min-sm:w-[30vw]">
                         <Image
                             src={animeImage}
+                            priority={true}
                             alt="Anime Image"
                             width={500}
                             className="rounded-lg border-2 border-gray"
@@ -94,6 +96,7 @@ export default function Question({animeImage, answerImage, question, possibleAns
                     <div className="w-[50vw] min-sm:w-[30vw]">
                         <Image
                             src={answerImage}
+                            priority={true}
                             alt="Original Image"
                             width={500}
                             className="rounded-lg border-2 border-gray"
