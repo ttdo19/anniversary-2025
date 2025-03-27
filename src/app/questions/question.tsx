@@ -72,15 +72,16 @@ export default function Question({animeImage, answerImage, question, possibleAns
         );
     } else {
         return (
-            <motion.div className="flex flex-col items-center text-base min-sm:text-xl my-[0.25em]"
+            <motion.div className="flex flex-col items-center text-lg min-sm:text-xl my-[0.25em]"
                 variants={variants}
                 initial='initial'
                 animate='visible'
                 >
                 <h1>
                     {choice && "You chose correctly🎉🎉🎉"}
-                    {!choice && "Oops! Maybe you will get the next one!"}
+                    {!choice && "Oops!🫣🙀"}
                 </h1>
+                <h1>{!choice && "Maybe you will get the next one!"}</h1>
                 <div className="flex flex-row flex-wrap gap-[20px] justify-center my-[0.25em] ">
                     <div className="w-[50vw] min-sm:w-[30vw]">
                         <Image
@@ -102,7 +103,7 @@ export default function Question({animeImage, answerImage, question, possibleAns
                 <h1>
                 {possibleAnswers[correctAnswer].text}
                 </h1>
-                <button onClick={nextQuestion} className="min-sm:text-xl w-[100px] min-2xl:w-[400px] text-base rounded-[8px] border-solid border-[2px] p-[0.3em] min-sm:m-[0.5rem] border-black min-sm:px-[1.2em] min-sm:py-[0.6em] font-medium bg-[#C1C3C1] cursor-pointer text-black hover:bg-[#1A97DB] hover:text-white">
+                <button onClick={nextQuestion} className="min-sm:text-xl w-[100px] min-2xl:w-[400px] text-lg rounded-[8px] border-solid border-[2px] p-[0.3em] min-sm:m-[0.5rem] border-black min-sm:px-[1.2em] min-sm:py-[0.6em] font-medium bg-[#C1C3C1] cursor-pointer text-black hover:bg-[#1A97DB] hover:text-white">
                     Continue
                 </button>
             </motion.div>
