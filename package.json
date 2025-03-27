@@ -10,10 +10,15 @@
   },
   "dependencies": {
     "framer-motion": "^12.6.2",
+    "js-tokens": "^9.0.1",
+    "loose-envify": "^1.4.0",
     "lottie-react": "^2.4.1",
     "next": "15.2.4",
+    "object-assign": "^4.1.1",
+    "prop-types": "^15.8.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-is": "^19.0.0",
     "react-type-animation": "^3.2.0"
   },
   "devDependencies": {
