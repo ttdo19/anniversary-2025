@@ -35,7 +35,7 @@ export default function QuestionHomePage() {
         );
     }
     return (
-        <motion.div className="h-screen flex flex-col justify-center items-center text-center text-4xl max-sm:text-2xl"
+        <motion.div className="h-screen flex flex-col justify-center items-center text-center text-2xl min-sm:text-4xl"
             variants={variants2}
             initial='initial'
             animate='visible'>
